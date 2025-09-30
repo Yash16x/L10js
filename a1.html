@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> JSON</h1>
+    <h4> Js objective notation</h4>
+    <h5> JSON is used to send js objects over internet server </h5>
+    <p id="res"></p>
+    <script>
+        var obj={name:"Tony",age:20, city:"California"}
+        var myJSON=JSON.stringify(obj)
+        var newobj=JSON.parse(myJSON);
+        document.getElementById("res").innerHTML=newobj.name + " " + " " + newobj.age + newobj.city;
+
+    </script>
+</body>
+</html>

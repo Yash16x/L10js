@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="result1"></p>
+    <script>
+        class Person {
+            constructor(n) {
+                this.name = n;
+            }
+
+            hello() {
+                return "Hello " + this.name;
+            }
+        }
+
+        let obj = new Person("Yash");
+        document.getElementById("result1").innerHTML = obj.hello();
+    </script>
+
+</body>
+</html>
